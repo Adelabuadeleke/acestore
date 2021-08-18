@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Style+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
 body {
 	margin: 0;
 	padding: 0;
-	font-family: Cursive, Arial, Helvetica, sans-serif;
+	font-family: "Open Sans", sans-serif;
 	scroll-behavior: smooth;
 }
 
@@ -118,7 +119,7 @@ header {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: 27rem;
+	/* width: 27rem; */
 }
 
 .title {
@@ -228,6 +229,10 @@ footer {
 		width: 250px;
 	}
 
+	.intro_details_div {
+		width: 27rem;
+	}
+
 	.intro_details {
 		/* display: flex; */
 		justify-content: center;
@@ -268,6 +273,14 @@ footer {
 	.intro_details h1 {
 		text-transform: uppercase;
 		font-size: 2.5rem;
+	}
+
+	.intro_details_div {
+		width: 35rem;
+	}
+
+	.intro_details p {
+		width: 350px;
 	}
 }
 
