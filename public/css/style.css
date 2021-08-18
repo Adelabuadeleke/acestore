@@ -84,7 +84,8 @@ header {
 			rgba(33, 33, 33, 0.802) 0%,
 			rgba(46, 46, 44, 0.802) 100%
 		),
-		url("../img/jojo-sharemyfoodd-HaRewqCSE9I-unsplash.jpg") center no-repeat;
+		url("https://res.cloudinary.com/adelabuadeleke/image/upload/v1629309695/jojo-sharemyfoodd-HaRewqCSE9I-unsplash_b7q5ra.jpg")
+			center no-repeat;
 	color: burlywood;
 }
 
