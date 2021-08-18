@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css2?family=Style+Script&display=swap");
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Cursive, Arial, Helvetica, sans-serif;
+	scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0;
+}
+
+.sidebar {
+	position: absolute;
+	z-index: 2;
+	width: 300px;
+	background: #333;
+	height: 100vh;
+	transform: translateY(-100%);
+}
+
+.show {
+	transform: translateY(0);
+}
+
+aside {
+	margin-top: 5rem;
+}
+
+aside a p {
+	padding: 1.5rem;
+	text-transform: capitalize;
+}
+
+aside a p:hover {
+	background: burlywood;
+	color: white;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+	font-family: "Style Script", cursive;
+}
+
+.toggle_btn {
+	background: transparent;
+	border: none;
+	color: burlywood;
+	font-size: 1.8rem;
+}
+
+ul {
+	display: flex;
+}
+
+li {
+	margin: 0.5rem;
+	list-style: none;
+	text-transform: capitalize;
+}
+
+a {
+	cursor: pointer;
+	text-decoration: none;
+	color: burlywood;
+}
+
+header {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	background: linear-gradient(
+			90deg,
+			rgba(33, 33, 33, 0.802) 0%,
+			rgba(46, 46, 44, 0.802) 100%
+		),
+		url("../img/jojo-sharemyfoodd-HaRewqCSE9I-unsplash.jpg") center no-repeat;
+	color: burlywood;
+}
+
+.intro {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.shop_btn {
+	background: transparent;
+	border: 3px solid burlywood;
+	padding: 0.5rem;
+	text-transform: capitalize;
+	color: burlywood;
+}
+
+.shop_btn:hover {
+	color: white;
+	background: burlywood;
+}
+
+.intro_details h1 {
+	font-family: "Style Script", cursive;
+}
+
+.intro_details_div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 27rem;
+}
+
+.title {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.title h2 {
+	text-transform: capitalize;
+	margin: 0.5rem;
+}
+.underline {
+	height: 0.25rem;
+	width: 4rem;
+	background: burlywood;
+}
+.all_items {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.store_item {
+	padding: 1rem;
+	background: burlywood;
+	margin: 1rem;
+}
+.store_item img {
+	width: 100%;
+	height: 17rem;
+	background-size: cover;
+	border: 3px solid saddlebrown;
+	object-fit: cover;
+}
+
+.item_details {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 2px solid saddlebrown;
+}
+
+.price {
+	color: saddlebrown;
+	font-weight: 900;
+}
+
+.footer_item {
+	width: 15rem;
+}
+
+.f-title {
+	text-transform: uppercase;
+	color: burlywood;
+}
+
+#footer {
+	background: black;
+	color: white;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+input {
+	margin: 0.5rem 0;
+	border-color: transparent;
+	background: transparent;
+	border-bottom: 1px solid burlywood;
+	outline: none;
+	color: white;
+}
+
+.submit {
+	background: burlywood;
+	color: white;
+	padding: 0.2rem;
+	width: 8rem;
+}
+
+.submit:hover {
+	background: saddlebrown;
+}
+
+footer {
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: saddlebrown;
+	padding: 2rem;
+}
+
+/* Responsiveness */
+@media screen and (min-width: 320px) {
+	ul {
+		display: none;
+	}
+
+	.intro_details h1 {
+		text-transform: uppercase;
+		font-size: 2rem;
+	}
+
+	.intro_details p {
+		width: 250px;
+	}
+
+	.intro_details {
+		/* display: flex; */
+		justify-content: center;
+		align-items: center;
+		/* width: 27rem; */
+		padding: 0.5rem;
+		flex-direction: column;
+	}
+
+	.shop_btn {
+		margin: 10px 0;
+	}
+
+	.store_item {
+		width: 100vw;
+	}
+
+	.store_item img {
+		height: 10rem;
+	}
+
+	.all_items {
+		padding: 0;
+	}
+}
+
+@media screen and (min-width: 360px) {
+	ul {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 540px) {
+	ul {
+		display: none;
+	}
+
+	.intro_details h1 {
+		text-transform: uppercase;
+		font-size: 2.5rem;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.toggle_btn {
+		display: none;
+	}
+
+	ul {
+		display: flex;
+	}
+
+	.store_item {
+		width: 22.5rem;
+	}
+
+	.store_item img {
+		height: 17rem;
+	}
+
+	.all_items {
+		padding: 2rem;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	ul {
+		display: flex;
+	}
+
+	.intro_details {
+		width: 40rem;
+	}
+
+	.intro_details h1 {
+		text-transform: uppercase;
+		font-size: 3.5rem;
+	}
+
+	.shop_btn {
+		margin: 20px 0;
+	}
+}

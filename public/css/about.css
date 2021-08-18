@@ -1,0 +1,330 @@
+body {
+	background: black;
+	/* font-family: Arial, Helvetica, sans-serif; */
+	font-family: Cursive, Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.sidebar {
+	position: absolute;
+	z-index: 2;
+	width: 300px;
+	background: #333;
+	height: 100vh;
+	transform: translateY(-100%);
+}
+
+.show {
+	transform: translateY(0);
+}
+
+aside {
+	margin-top: 5rem;
+}
+
+aside a p {
+	padding: 1.5rem;
+	text-transform: capitalize;
+}
+
+aside a p:hover {
+	background: burlywood;
+	color: white;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+	color: burlywood;
+}
+
+.toggle_btn {
+	background: transparent;
+	border: none;
+	color: burlywood;
+	font-size: 1.8rem;
+}
+
+ul {
+	display: flex;
+}
+
+li {
+	margin: 0.5rem;
+	list-style: none;
+	text-transform: capitalize;
+}
+
+a {
+	cursor: pointer;
+	text-decoration: none;
+	color: burlywood;
+}
+
+/* a:visited {
+	color: red;
+} */
+
+.about_heading {
+	color: burlywood;
+	display: flex;
+	justify-content: center;
+	/* background: url("/img/jojo-sharemyfoodd-HaRewqCSE9I-unsplash.jpg") no-repeat; */
+	background-size: cover;
+	object-fit: center;
+}
+
+.about_details {
+	width: 30rem;
+}
+
+.about_heading h1 {
+	text-transform: uppercase;
+	text-align: center;
+	/* color: saddlebrown; */
+}
+.about_heading p {
+	text-align: center;
+	/* color: burlywood; */
+}
+
+.first {
+	width: 50rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* height: 80rem; */
+}
+
+.first h1 {
+	transform: rotate(270deg);
+	text-transform: uppercase;
+	color: saddlebrown;
+	/* text-align: center; */
+}
+
+/* .second {
+	padding: 5rem;
+} */
+
+.second-img {
+	display: flex;
+	justify-content: center;
+	/* align-items: center; */
+	flex-wrap: wrap;
+	margin: 1rem;
+}
+
+.div_one,
+.div_two,
+.div_three {
+	width: 20rem;
+	margin: 0.25rem;
+}
+
+.div_two {
+	display: flex;
+	flex-direction: column;
+	/* flex-wrap: wrap; */
+}
+
+.div_one img {
+	width: 100%;
+	margin: 0.25rem;
+}
+
+.div_two img {
+	width: 100%;
+	margin: 0.25rem;
+}
+
+#contact {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	background: saddlebrown;
+}
+
+#contact p {
+	text-transform: uppercase;
+}
+
+.con_btn {
+	background: transparent;
+	color: white;
+	border: 1px solid white;
+	border-radius: 30px;
+	width: 150px;
+	text-align: center;
+	padding: 0.5rem;
+	text-transform: uppercase;
+}
+
+.con_btn:hover {
+	color: saddlebrown;
+	background: white;
+	cursor: pointer;
+}
+
+.footer_item {
+	width: 15rem;
+}
+
+.f-title {
+	text-transform: uppercase;
+	color: burlywood;
+}
+
+#footer {
+	color: white;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+input {
+	margin: 0.5rem 0;
+	border-color: transparent;
+	background: transparent;
+	border-bottom: 1px solid burlywood;
+	outline: none;
+	color: white;
+}
+
+.submit {
+	background: burlywood;
+	color: white;
+	padding: 0.2rem;
+	width: 8rem;
+}
+
+.submit:hover {
+	background: saddlebrown;
+}
+
+footer {
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: saddlebrown;
+	padding: 2rem;
+}
+
+/* Responsiveness */
+@media screen and (min-width: 320px) {
+	ul {
+		display: none;
+	}
+
+	.div_one,
+	.div_two,
+	.div_three {
+		width: 15rem;
+		margin: 0.25rem;
+	}
+
+	.second p {
+		margin: 0.5rem 0;
+		padding: 0.5rem 0;
+	}
+
+	#story {
+		background: white;
+		display: flex;
+		padding: 0.5rem;
+		margin: 0.5rem;
+	}
+
+	#contact {
+		margin: 0.5rem;
+		padding: 2rem;
+	}
+
+	#contact p {
+		font-size: 1rem;
+	}
+
+	.con_btn {
+		background: transparent;
+		color: white;
+		border: 1px solid white;
+		border-radius: 30px;
+		width: 120px;
+		text-align: center;
+		padding: 0.35rem;
+		text-transform: uppercase;
+	}
+}
+
+@media screen and (min-width: 360px) {
+	ul {
+		display: none;
+	}
+
+	.div_one img,
+	.div_two img,
+	.div_three img {
+		width: 15rem;
+		margin: 0.25rem;
+	}
+}
+
+@media screen and (min-width: 540px) {
+	ul {
+		display: none;
+	}
+
+	.footer_item {
+		width: 10.5rem;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.toggle_btn {
+		display: none;
+	}
+
+	ul {
+		display: flex;
+	}
+
+	#story {
+		background: white;
+		display: flex;
+		padding: 2rem;
+		margin: 2rem;
+	}
+
+	#contact {
+		margin: 2rem;
+		padding: 5rem;
+	}
+
+	#contact p {
+		font-size: 1.7rem;
+	}
+
+	.con_btn {
+		background: transparent;
+		color: white;
+		border: 1px solid white;
+		border-radius: 30px;
+		width: 150px;
+		text-align: center;
+		padding: 0.5rem;
+		text-transform: uppercase;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	ul {
+		display: flex;
+	}
+}
